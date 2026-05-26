@@ -99,7 +99,7 @@ jupyter notebook
 
 ---
 
-## Part of a Series
+## So Far...
 
 This is the first project in a series building core ML algorithms from scratch:
 
@@ -107,3 +107,12 @@ This is the first project in a series building core ML algorithms from scratch:
 2. Logistic Regression — gradient descent on a classification problem
 3. PCA Visualiser — dimensionality reduction via eigendecomposition
 4. Naive Bayes Classifier — probabilistic classification from scratch
+
+## Part of a Series
+
+| # | Project | Status |
+|---|---------|--------|
+| 1 | Linear Regression from Scratch | ✅ Complete |
+| 2 | [Logistic Regression from Scratch](https://github.com/groovyds/logistic-regression) | ✅ Complete |
+| 3 | [PCA Visualiser](https://github.com/groovyds/pca-visualizer) | ✅ Complete |
+| 4 | Naive Bayes Classifier | ⏳ Upcoming |
