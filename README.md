@@ -31,6 +31,7 @@ $$\frac{\partial J}{\partial \theta} = \frac{2}{m} X^T(X\theta - y)$$
 
 $$\theta := \theta - \alpha \cdot \frac{\partial J}{\partial \theta}$$
 
+
 ---
 
 ## Project Structure
@@ -48,11 +49,15 @@ linear-regression-from-scratch/
 
 ## Key Results
 
-| Metric | Value  |
-|--------|--------|
-| MSE    | 0.5546 |
-| RMSE   | 0.7447 |
-| R²     | 0.5768 |
+
+| Metric | Baseline | L2 (λ=0.001) |
+|--------|----------|------------|
+| MSE    | 0.5546       | 0.5546          |
+| RMSE   | 0.7447        | 0.7447          |
+| R²     | 0.5768        | 0.5768          |
+
+> L2 regularization matched the baseline exactly — expected on a dataset where 
+> n >> p and the model shows no signs of overfitting. See notebook Section 5 for the full λ > sweep.
 
 
 
@@ -71,6 +76,9 @@ linear-regression-from-scratch/
 - Mean Squared Error loss function and its analytical gradient derivation
 - Gradient descent optimisation
 - Feature standardisation and its effect on training, with comparison to min-max scaling
+- L2 Regularization (Ridge) derived from first principles; modified loss and 
+  gradient with bias correctly excluded from the penalty; evaluated against the 
+  baseline via a λ sweep
 - Model evaluation metrics: MSE, RMSE, and R²
 - Model evaluation plots: Predicted vs Actual, Residuals, and Feature Coefficients
 
@@ -89,17 +97,7 @@ linear-regression-from-scratch/
 
 ---
 
-## Setup
-
-```bash
-git clone <repo-url>
-pip install -r requirements.txt
-jupyter notebook
-```
-
----
-
-## So Far...
+## Part of a Series
 
 This is the first project in a series building core ML algorithms from scratch:
 
